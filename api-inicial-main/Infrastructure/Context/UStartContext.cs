@@ -21,6 +21,9 @@ namespace UStart.Infrastructure.Context
             base.OnConfiguring(optionsBuilder);
         }
         
+
+
+        public DbSet<GrupoProduto> GrupoProdutos {get; set;}
         public DbSet<Usuario> Usuarios { get; set; }
 
         public override int SaveChanges()
